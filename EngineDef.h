@@ -1,0 +1,11 @@
+#pragma once
+
+#define ENG_SUCCESS 0 
+#define ENG_OK 0
+
+#define ERR_GLFW_INIT 1
+#define ERR_GLAD_INIT 2
+#define ERR_CREATE_DISPLAY_FAILED 3
+#define ERR_ENGINE_NOT_INITIALIZED 4
+#define ERR_DISPLAY_NOT_CREATED 5
+#define ERR_SHADER_COMPILATION 6
