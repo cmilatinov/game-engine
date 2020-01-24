@@ -143,49 +143,58 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="CameraFPS.cpp" />
-    <ClCompile Include="Display.cpp" />
-    <ClCompile Include="FBO.cpp" />
-    <ClCompile Include="glad.c" />
-    <ClCompile Include="GLMath.cpp" />
-    <ClCompile Include="GLMatrix.cpp" />
-    <ClCompile Include="GLVector.cpp" />
-    <ClCompile Include="Keyboard.cpp" />
-    <ClCompile Include="Loader.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Mesh.cpp" />
-    <ClCompile Include="MeshShader.cpp" />
-    <ClCompile Include="Mouse.cpp" />
-    <ClCompile Include="Shader.cpp" />
-    <ClCompile Include="SkeletalMesh.cpp" />
-    <ClCompile Include="Texture.cpp" />
-    <ClCompile Include="VAO.cpp" />
+    <ClCompile Include="core\animation\Animation.cpp" />
+    <ClCompile Include="core\camera\Camera.cpp" />
+    <ClCompile Include="core\camera\CameraFPS.cpp" />
+    <ClCompile Include="core\display\Display.cpp" />
+    <ClCompile Include="core\objects\FBO.cpp" />
+    <ClCompile Include="core\glad\glad.c" />
+    <ClCompile Include="core\math\GLMath.cpp" />
+    <ClCompile Include="core\math\GLMatrix.cpp" />
+    <ClCompile Include="core\math\GLVector.cpp" />
+    <ClCompile Include="core\input\Keyboard.cpp" />
+    <ClCompile Include="core\utils\Loader.cpp" />
+    <ClCompile Include="core\main.cpp" />
+    <ClCompile Include="core\objects\Mesh.cpp" />
+    <ClCompile Include="core\shaders\MeshShader.cpp" />
+    <ClCompile Include="core\input\Mouse.cpp" />
+    <ClCompile Include="core\objects\Primitive.cpp" />
+    <ClCompile Include="core\render\PrimitiveRenderer.cpp" />
+    <ClCompile Include="core\shaders\PrimitiveShader.cpp" />
+    <ClCompile Include="core\shaders\Shader.cpp" />
+    <ClCompile Include="core\objects\SkeletalMesh.cpp" />
+    <ClCompile Include="core\objects\Texture.cpp" />
+    <ClCompile Include="core\objects\VAO.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="CameraFPS.h" />
-    <ClInclude Include="Display.h" />
-    <ClInclude Include="EngineDef.h" />
-    <ClInclude Include="FBO.h" />
-    <ClInclude Include="GLMath.h" />
-    <ClInclude Include="GLMatrix.h" />
-    <ClInclude Include="GLVector.h" />
-    <ClInclude Include="Animation.h" />
-    <ClInclude Include="Keyboard.h" />
-    <ClInclude Include="Loader.h" />
-    <ClInclude Include="Mesh.h" />
-    <ClInclude Include="MeshShader.h" />
-    <ClInclude Include="Mouse.h" />
-    <ClInclude Include="Shader.h" />
-    <ClInclude Include="SkeletalMesh.h" />
-    <ClInclude Include="stb_image.h" />
-    <ClInclude Include="Texture.h" />
-    <ClInclude Include="VAO.h" />
+    <ClInclude Include="core\camera\Camera.h" />
+    <ClInclude Include="core\camera\CameraFPS.h" />
+    <ClInclude Include="core\display\Display.h" />
+    <ClInclude Include="core\utils\EngineDef.h" />
+    <ClInclude Include="core\objects\FBO.h" />
+    <ClInclude Include="core\math\GLMath.h" />
+    <ClInclude Include="core\math\GLMatrix.h" />
+    <ClInclude Include="core\math\GLVector.h" />
+    <ClInclude Include="core\animation\Animation.h" />
+    <ClInclude Include="core\input\Keyboard.h" />
+    <ClInclude Include="core\utils\Loader.h" />
+    <ClInclude Include="core\objects\Mesh.h" />
+    <ClInclude Include="core\shaders\MeshShader.h" />
+    <ClInclude Include="core\input\Mouse.h" />
+    <ClInclude Include="core\objects\Primitive.h" />
+    <ClInclude Include="core\render\PrimitiveRenderer.h" />
+    <ClInclude Include="core\shaders\PrimitiveShader.h" />
+    <ClInclude Include="core\shaders\Shader.h" />
+    <ClInclude Include="core\objects\SkeletalMesh.h" />
+    <ClInclude Include="core\utils\stb_image.h" />
+    <ClInclude Include="core\objects\Texture.h" />
+    <ClInclude Include="core\objects\VAO.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MeshShaderFragment.glsl" />
-    <None Include="MeshShaderVertex.glsl" />
+    <None Include="shader_source\MeshShaderFragment.glsl" />
+    <None Include="shader_source\MeshShaderVertex.glsl" />
+    <None Include="shader_source\PrimitiveShaderFragment.glsl" />
+    <None Include="shader_source\PrimitiveShaderVertex.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
